@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>örnek çalışma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container">
+        <form action="kayit.html" method="post" class="row mt-3 was-validated">
+            <div class="col-12 form-floating">
+                <input type="email" class="form-control" name="kposta" id="kposta" placeholder="ornek@gmail.com" required>  <!-- placholder kutunun içine yazı yazıyo  repuired zorunlu oluyo-->
+                <label for="kposta" class="form-label ms-2">E-posta Bilgisi:</label>
+           <!-- <div class="form-text">yukarıya doğru şekilde epostanızı girin örn:ornek@gmail.com</div>   kutunun altına yazı yazar -->
+           <div class="invalid-feedback">geçersiz eposta girdiniz örn:adigmail.com</div>
+           <div class="valid-feedback">uygun şekilde girdiniz</div>
+            </div>
+            <div class="col-12 form-floating mt-3">
+                <input type="text" class="form-control" name="kad" id="kad" placeholder="ashfasdhd">
+                <label for="kad" class="form-label ms-2" >adınız:</label>
+            </div>
+            <div class="col-12 mt-3">
+                <!-- checkboxlar olacak -->
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="1" id="secim1" name="secim1">
+                    <label class="form-check-label" for="secim1">
+                      pastalar
+                    </label>
+                  </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="2" id="secim2" name="secim2">
+                    <label class="form-check-label" for="secim1">
+                      içecekler
+                    </label>
+                  </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="3" id="secim3" name="secim3">
+                    <label class="form-check-label" for="secim1">
+                      tatlılar
+                    </label>
+                  </div>
+            </div>
+            <div class="col-12 mt-3">
+                <p>dondurma çeşitleri:</p>
+                <!-- checkboxlar olacak -->
+                <input type="checkbox" class="btn-check" id="dondurma1" autocomplete="off">
+                 <label class="btn btn-outline-success" for="dondurma1">karamel</label>
+
+                <input type="checkbox" class="btn-check" id="dondurma2" autocomplete="off">
+                 <label class="btn btn-outline-success" for="dondurma2">çilek</label>
+
+                <input type="checkbox" class="btn-check" id="dondurma3" autocomplete="off">
+                 <label class="btn btn-outline-success" for="dondurma3">çikolata</label>
+
+                <input type="checkbox" class="btn-check" id="dondurma4" autocomplete="off">
+                 <label class="btn btn-outline-success" for="dondurma4">muz</label>
+
+                <input type="checkbox" class="btn-check" id="dondurma5" autocomplete="off">
+                 <label class="btn btn-outline-success" for="dondurma5">kavunlu</label>
+
+            </div>
+            <div class="col-12 mt-3 ">
+                <label for="ttur">talep türü seçiniz:</label>
+                 <select name="ttur" id="ttur" class="form-select">
+                    <option value="1">şikayet </option>
+                    <option value="2">öneri</option>
+                    <option value="3">teşekkür</option>
+                 </select>
+            </div>
+            <div class="col-12 mt-3">
+                <label for="kdüsünce" class="form-label">düşünce:</label>
+              <textarea class="form-control" name="kdüsünce" id="kdüsünce" rows="5"></textarea>      <!-- rows kutuyu uzatmayı sağlar -->
+             
+            </div>
+            <div class="col-12 mt-3">
+                <!-- radio kullanımı -->
+                <p>ödeme türü:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="1" id="odeme1" name="odeme"required>
+                    <label class="form-check-label" for="odeme1">
+                      banka kartı
+                    </label>
+                    
+                  </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="2" id="odeme2" name="odeme">
+                    <label class="form-check-label" for="odeme2">
+                     kredi kartı
+                    </label>
+                  </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="3" id="odeme3" name="odeme">
+                    <label class="form-check-label" for="odeme3">
+                      kapıda ödeme
+                    </label>
+                    <div class="invalid-feedback">
+                        ödeme türlerinden bir tanesini seçiniz
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="input-group">
+                <input type="text" class="form-control" value="670">  <!-- value içine içerik yapar-->
+                    <span class="input-group-text">₺</span>
+                  </div>
+            </div>
+            <div class="col-12 mt-3">
+               <button type="submit" class="btn btn-success">kaydet</button>
+           </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
